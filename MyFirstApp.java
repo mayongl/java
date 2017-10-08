@@ -1,7 +1,22 @@
-public class MyFirstApp {
+import java.util.Date;
 
-public static void main (String[] args) {
-	System.out.println("I rule!");
-	System.out.println("The world");
-}
+public class MyFirstApp {
+	Integer i;
+	int j;
+
+	public static void main (String[] args) {
+			//MyFirstApp t = new MyFirstApp();
+			//t.go();
+
+			Date today = new Date();
+			System.out.println(String.format("%tA, %<tB, %<td, %<tc, %<tr", today));
+	}
+
+	public void go() {
+		j=i;
+
+
+		System.out.println(j);
+		System.out.println(i);
+	}
 }

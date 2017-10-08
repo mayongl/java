@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class ShipGame {
   public static void main (String[] args) {
     int numOfGuesses = 0;
@@ -8,7 +10,10 @@ public class ShipGame {
 
     int randomNum = (int) (Math.random() * 5);
 
-    int[] locations = {randomNum, randomNum+1, randomNum+2};
+    ArrayList<String> locations = new ArrayList<String>();
+    locations.add("" + randomNum);
+    locations.add("" + randomNum+1);
+    locations.add("" + randomNum+2);
 
     theDotCom.setLocationCells(locations);
 
